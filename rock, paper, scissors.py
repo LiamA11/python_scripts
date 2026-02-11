@@ -1,6 +1,7 @@
 # rock, paper, scissors
 import random
 
+# variables
 com = "a"
 player = "a"
 choices = ("rock", "paper", "scissors")
@@ -8,6 +9,7 @@ stop = "y"
 scoreC = 0
 scoreP = 0
 
+# game start
 print("Rules: This game follows the basic rules of rock, paper, scissors. when the bot yells SHOOT, please type your turn.")
 
 while stop.strip().lower() == "y":
@@ -43,5 +45,13 @@ while stop.strip().lower() == "y":
     
     print("The current score is", scoreC, "to", scoreP)
     stop = input("Would you like to play again?(y/n): ")
+
+# ending message
+if scoreC > scoreP:
+    print("I win this game", scoreC, "to", scoreP)
+elif scoreC < scoreP:
+    print("You win this game", scoreP, "to", scoreC)
+else:
+    print("This game ends with a tie", scoreC, "to", scoreP)
 
 print("Thanks for playing!")
