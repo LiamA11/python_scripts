@@ -32,5 +32,4 @@ while stop.strip().lower() == "y":
     print("Your current highscore is", highscore)
     stop = str(input("Would you like to play again?(y/n): "))
 
-print("Thanks for playing Number Guesser!")
-print("Your final highscore is", highscore)
+print("Thanks for playing Number Guesser!\nYour final highscore is", highscore)
